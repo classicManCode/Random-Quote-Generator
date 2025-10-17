@@ -15,14 +15,17 @@ const quotes = ['The loudest thunder often follows the quietest storm',
 
 const randomIndex = Math.floor(Math.random() * quotes.length);
 
-let randomQuote = quotes[randomIndex];
+
+function randomQuote() {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+
+    let randomQuote = quotes[randomIndex];
+    
+    display.textContent = randomQuote
+}
 
 generateBtn.onclick = () => {
-  const randomIndex = Math.floor(Math.random() * quotes.length);
-
-  let randomQuote = quotes[randomIndex];
-  
-  display.textContent = randomQuote
+  randomQuote();
 }
 
 console.log(quotes[randomIndex]);
