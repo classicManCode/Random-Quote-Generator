@@ -51,7 +51,7 @@ h1 {
 }
 
 .quote-card p {
-  display: block;
+  display: none;
   font-weight: bold;
   font-size: clamp(1rem, 3vw, 1.2rem);
   font-family: Arial, Helvetica, sans-serif;
